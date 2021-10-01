@@ -1,0 +1,31 @@
+﻿@layout Layout
+@page "/"
+
+<title>Page de connection</title>
+
+<style>
+    body {
+        background-image: url(https://media.istockphoto.com/photos/modern-classroom-interior-design-3d-render-picture-id1056658924?k=6&m=1056658924&s=170667a&w=0&h=JtTOJVmVSz9lcFWbsbK24pnUUtQktCl0qFffq_p0HqA=);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
+
+<body>
+    <h1 class="TitleConnection text-white mt-4">Le Bon Samaritain</h1>
+    <form action="/PageHome" method="get" target="_blank">
+        <div id="mainBoxConnexion" class="">
+            <h2 class="TitleConnection text-white mb-2">Connexion</h2>
+            <hr />
+            <div class="text-center">
+                <input type="text" class="" name="inputId" id="inputId" required autocomplete="off" placeholder="Identifiant">
+                <input type="password" class="" name="inputPassword" id="inputPassword" required autocomplete="off" placeholder="Mot de passe">
+                <button name="btnConnexion" class="btn btn-success" id="btnConnexion" type="submit">Connexion</button>
+            </div>
+        </div>
+    </form>
+
+</body>
+
+
+

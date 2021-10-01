@@ -1,0 +1,57 @@
+﻿@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
+
+.TitleConnection {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.TextHome {
+    background-color: cornflowerblue;
+    text-align: center;
+    margin-top: 3%;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-right: 4%;
+    padding-left: 4%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.SecondaryNavbar {
+    text-align: center;
+    margin-top: 4%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.LastAdBlock {
+    background-color: rgba(0,0,0,0.66);
+    margin-top: 3%;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-right: 4%;
+    padding-left: 4%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+    color: white;
+}
+
+.NewAdBlock {
+    background-color: rgba(0,0,0,0.66);
+    margin-top: 3%;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+    color: white;
+}
+
+.BackgroundAd {
+    background-color: grey;
+}
+
+.BackgroundAdV2{
+    background-color: cornflowerblue;
+}

@@ -1,0 +1,74 @@
+﻿@page "/PageAdGift"
+@using LeBonSamaritain.Entities
+@inject HttpClient Http
+
+
+<style>
+    body {
+        background-image: url(https://media.istockphoto.com/photos/modern-classroom-interior-design-3d-render-picture-id1056658924?k=6&m=1056658924&s=170667a&w=0&h=JtTOJVmVSz9lcFWbsbK24pnUUtQktCl0qFffq_p0HqA=);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+</style>
+
+<body>
+
+    <div class="TextHome">
+        <h2>Le Bon Samaritain le site de don, de vente, et de prêt entre établissements d'enseignement privés</h2>
+    </div>
+
+
+    <div class="SecondaryNavbar">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container-fluid">
+
+                <div class="navbar-nav mr-auto">
+                    <a class="nav-link" href="/PageHome">Dernières annonces</a>
+                    <a class="nav-link" href="/PageAdSale">Ventes</a>
+                    <a class="nav-link" href="/PageAdGift">Dons</a>
+                    <a class="nav-link" href="/PageAdLoad">Prêts</a>
+                    <a class="nav-link disabled">Personnels</a>
+                </div>
+
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Ex : Table" aria-label="Recherche">
+                    <button class="btn btn-outline-success" type="submit">Recherche</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+
+
+    <div class="LastAdBlock">
+        <h2>Dons</h2>
+        <div class="d-flex justify-content-around text-center mt-4">
+            @foreach (Ad ad in adAllAdGift)
+            {
+                <div class="p-2 bd-highlight">
+
+                    <a href="/">
+                        <img src="@ad.Picture" width="250" height="250" />
+                    </a>
+                    <h4>@ad.Description</h4>
+                </div>
+            }
+
+
+        </div>
+
+    </div>
+
+</body>
+
+
+
+@code {
+
+    private List<Ad> adAllAdGift = new List<Ad>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        adAllAdGift = await Http.GetFromJsonAsync<List<Ad>>("https://localhost:44351/api/Ad/AllAdGift");
+    }
+}

@@ -1,0 +1,9 @@
+D:\LeBonSamaritainProduction\LeBonSamaritain\LeBonSamaritain.Entities\bin\Debug\netcoreapp3.1\LeBonSamaritain.Entities.deps.json
+D:\LeBonSamaritainProduction\LeBonSamaritain\LeBonSamaritain.Entities\bin\Debug\netcoreapp3.1\LeBonSamaritain.Entities.dll
+D:\LeBonSamaritainProduction\LeBonSamaritain\LeBonSamaritain.Entities\bin\Debug\netcoreapp3.1\LeBonSamaritain.Entities.pdb
+D:\LeBonSamaritainProduction\LeBonSamaritain\LeBonSamaritain.Entities\obj\Debug\netcoreapp3.1\LeBonSamaritain.Entities.AssemblyInfoInputs.cache
+D:\LeBonSamaritainProduction\LeBonSamaritain\LeBonSamaritain.Entities\obj\Debug\netcoreapp3.1\LeBonSamaritain.Entities.AssemblyInfo.cs
+D:\LeBonSamaritainProduction\LeBonSamaritain\LeBonSamaritain.Entities\obj\Debug\netcoreapp3.1\LeBonSamaritain.Entities.csproj.CoreCompileInputs.cache
+D:\LeBonSamaritainProduction\LeBonSamaritain\LeBonSamaritain.Entities\obj\Debug\netcoreapp3.1\LeBonSamaritain.Entities.dll
+D:\LeBonSamaritainProduction\LeBonSamaritain\LeBonSamaritain.Entities\obj\Debug\netcoreapp3.1\LeBonSamaritain.Entities.pdb
+D:\LeBonSamaritainProduction\LeBonSamaritain\LeBonSamaritain.Entities\obj\Debug\netcoreapp3.1\LeBonSamaritain.Entities.csprojAssemblyReference.cache

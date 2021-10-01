@@ -1,0 +1,15 @@
+D:\LeBonSamaritainProduction\LeBonSamaritain\Shared\bin\Debug\net5.0\LeBonSamaritain.Shared.deps.json
+D:\LeBonSamaritainProduction\LeBonSamaritain\Shared\bin\Debug\net5.0\LeBonSamaritain.Shared.dll
+D:\LeBonSamaritainProduction\LeBonSamaritain\Shared\bin\Debug\net5.0\ref\LeBonSamaritain.Shared.dll
+D:\LeBonSamaritainProduction\LeBonSamaritain\Shared\bin\Debug\net5.0\LeBonSamaritain.Shared.pdb
+D:\LeBonSamaritainProduction\LeBonSamaritain\Shared\obj\Debug\net5.0\LeBonSamaritain.Shared.csprojAssemblyReference.cache
+D:\LeBonSamaritainProduction\LeBonSamaritain\Shared\obj\Debug\net5.0\LeBonSamaritain.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\LeBonSamaritainProduction\LeBonSamaritain\Shared\obj\Debug\net5.0\LeBonSamaritain.Shared.AssemblyInfoInputs.cache
+D:\LeBonSamaritainProduction\LeBonSamaritain\Shared\obj\Debug\net5.0\LeBonSamaritain.Shared.AssemblyInfo.cs
+D:\LeBonSamaritainProduction\LeBonSamaritain\Shared\obj\Debug\net5.0\LeBonSamaritain.Shared.csproj.CoreCompileInputs.cache
+D:\LeBonSamaritainProduction\LeBonSamaritain\Shared\obj\Debug\net5.0\LeBonSamaritain.Shared.dll
+D:\LeBonSamaritainProduction\LeBonSamaritain\Shared\obj\Debug\net5.0\ref\LeBonSamaritain.Shared.dll
+D:\LeBonSamaritainProduction\LeBonSamaritain\Shared\obj\Debug\net5.0\LeBonSamaritain.Shared.pdb
+D:\LeBonSamaritainProduction\LeBonSamaritain\Shared\bin\Debug\net5.0\LeBonSamaritain.Entities.dll
+D:\LeBonSamaritainProduction\LeBonSamaritain\Shared\bin\Debug\net5.0\LeBonSamaritain.Entities.pdb
+D:\LeBonSamaritainProduction\LeBonSamaritain\Shared\obj\Debug\net5.0\LeBonSamaritain.Shared.csproj.CopyComplete

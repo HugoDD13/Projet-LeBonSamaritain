@@ -1,0 +1,98 @@
+﻿@page "/PageHome"
+@using LeBonSamaritain.Entities
+@inject HttpClient Http
+
+
+<style>
+    body {
+        background-image: url(https://media.istockphoto.com/photos/modern-classroom-interior-design-3d-render-picture-id1056658924?k=6&m=1056658924&s=170667a&w=0&h=JtTOJVmVSz9lcFWbsbK24pnUUtQktCl0qFffq_p0HqA=);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+</style>
+
+<body>
+
+    <div class="TextHome">
+        <h2>Le Bon Samaritain le site de don, de vente, et de prêt entre établissements d'enseignement privés</h2>
+    </div>
+
+
+    <div class="SecondaryNavbar">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container-fluid">
+
+                <div class="navbar-nav mr-auto">
+                    <a class="nav-link" href="/PageHome">Dernières annonces</a>
+                    <a class="nav-link" href="/PageAdSale">Ventes</a>
+                    <a class="nav-link" href="/PageAdGift">Dons</a>
+                    <a class="nav-link" href="/PageAdLoad">Prêts</a>
+                    <a class="nav-link disabled">Personnels</a>
+                </div>
+
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Ex : Table" aria-label="Recherche">
+                    <button class="btn btn-outline-success" type="submit">Recherche</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+
+
+    <div class="LastAdBlock">
+        <h2>Dernières annonces publiées</h2>
+                <div class="d-flex justify-content-around text-center mt-4">
+
+                    <div class="p-2 bd-highlight">
+                        <h3>Vente</h3>
+                        <a href="/PageAdChaise">
+                            <img src="@adLastAdSale.Picture" width="250" height="250" />
+                        </a>
+                        <h4>@adLastAdSale.Description</h4>
+                    </div>
+
+
+                    <div class="p-2 bd-highlight">
+                        <h3>Don</h3>
+                        <a href="/">
+                            <img src="@adLastAdGift.Picture" width="250" height="250" />
+                        </a>
+                        <h4>@adLastAdGift.Description</h4>
+                    </div>
+
+
+                    <div class="p-2 bd-highlight">
+                        <h3>Prêt</h3>
+                        <a href="/">
+                            <img src="@adLastAdLoad.Picture" width="250" height="250" />
+                        </a>
+                        <h4>@adLastAdLoad.Description</h4>
+                    </div>
+                </div>
+ 
+    </div>
+   
+</body>
+
+
+
+@code { 
+
+    //private int nav = 0;
+
+    private Ad adLastAdSale = new Ad();
+    private Ad adLastAdGift = new Ad();
+    private Ad adLastAdLoad = new Ad();
+
+    //private List<Ad> adAllAdSale = new List<Ad>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        adLastAdSale = await Http.GetFromJsonAsync<Ad>("https://localhost:44351/api/Ad/LastAdSale");
+        adLastAdGift = await Http.GetFromJsonAsync<Ad>("https://localhost:44351/api/Ad/LastAdGift");
+        adLastAdLoad = await Http.GetFromJsonAsync<Ad>("https://localhost:44351/api/Ad/LastAdLoad");
+
+        //adAllAdSale = await Http.GetFromJsonAsync<List<Ad>>("https://localhost:44351/api/Ad/AllAdSale");
+    }
+}
